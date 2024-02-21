@@ -30,6 +30,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ![plot](public/static/login.png)
 
+Important: The web app has only been tested and QA'd on Chrome so use Chrome for best results!
+
 ### 5) Split screen in two
 
 Split your screen in half with left half the window with CheatCode and right half the window in which you are working on coding tasks.
