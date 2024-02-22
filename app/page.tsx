@@ -352,7 +352,7 @@ export default function LandingPage() {
         <main className="card flex-grow bg-[#ffffff] p-4 overflow-auto text-black">
           <div className="flex justify-between items-start mb-4">
             {/* Title */}
-            <h4 className="text-3xl font-bold text-center text-gray-900">CheatCode AI Coding Solutions</h4>
+            <h4 className="text-3xl font-bold text-center text-gray-900">CodeAssist AI Coding Solutions</h4>
 
             {/* Button aligned to the right */}
             <Button
@@ -390,7 +390,7 @@ export default function LandingPage() {
           </p>
           <Button
             className="bg-blue-600 text-white px-9 py-4 rounded-md hover:bg-black transition-colors duration-300"
-            onClick={handleStartSession}>
+            onClick={async() => {await handleStartSession()}}>
             Start Session
           </Button>
         </main>
@@ -398,7 +398,7 @@ export default function LandingPage() {
       {!isScreenSharing &&
         <div>
           <section id="howToUse" className="flex flex-col items-center justify-center space-y-6 py-20">
-            <h2 className="text-4xl font-bold text-center text-gray-900">How to use CheatCode?</h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900">How to use CodeAssist?</h2>
             <div className="w-full max-w-2xl">
               <QuestionCard>
                 <QuestionCardHeader>
@@ -406,7 +406,7 @@ export default function LandingPage() {
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    Split your screen in half with left half the window with CheatCode and right half the window in which you are working on coding tasks.
+                    Split your screen in half with left half the window with CodeAssist and right half the window in which you are working on coding tasks.
                   </p>
                   <img
                     src="/static/split_screen.png" // Replace with your image path or URL
@@ -424,7 +424,7 @@ export default function LandingPage() {
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    Start session and share the right screen so that CheatCode can automatically detect coding problems and present solutions.
+                    Start session and share the right screen so that CodeAssist can automatically detect coding problems and present solutions.
                   </p>
                   <img
                     src="/static/sharescreen.png" // Replace with your image path or URL
@@ -437,11 +437,11 @@ export default function LandingPage() {
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
-                  <h3 className="text-lg font-bold text-gray-900">Step 3: CheatCode Shows Solutions</h3>
+                  <h3 className="text-lg font-bold text-gray-900">Step 3: CodeAssist Shows Solutions</h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    CheatCode AI automatically detects coding problems from the right screen and displays insights, algorithms for solutions, and code solutions in Python.
+                    CodeAssist AI automatically detects coding problems from the right screen and displays insights, algorithms for solutions, and code solutions in Python.
                   </p>
                   <img
                     src="/static/generationscreen.png" // Replace with your image path or URL
@@ -459,80 +459,80 @@ export default function LandingPage() {
             <div className="w-full max-w-2xl">
               <QuestionCard>
                 <QuestionCardHeader>
-                  <h3 className="text-lg font-bold text-gray-900">What is CheatCode?</h3>
+                  <h3 className="text-lg font-bold text-gray-900">What is CodeAssist?</h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    CheatCode is an AI-powered tool designed to assist software engineers with side projects by transcribing and analyzing content from screen shares to provide real-time recommendations.
+                    CodeAssist is an AI-powered tool designed to assist software engineers with side projects by transcribing and analyzing content from screen shares to provide real-time recommendations.
                   </p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
-                  <h3 className="text-lg font-bold text-gray-900">How to use CheatCode?</h3>
+                  <h3 className="text-lg font-bold text-gray-900">How to use CodeAssist?</h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <ul className="text-gray-600">
                     <li>Open two windows and position them half and half on your screen </li>
-                    <li> Navigate to CheatCode on left window and navigate to document where you are working on tasks on right window</li>
-                    <li> Click on Start Session button and share screen of right window with CheatCode</li>
-                    <li> From now on, CheatCode will automatically propose solutions to coding tasks on right window</li>
+                    <li> Navigate to CodeAssist on left window and navigate to document where you are working on tasks on right window</li>
+                    <li> Click on Start Session button and share screen of right window with CodeAssist</li>
+                    <li> From now on, CodeAssist will automatically propose solutions to coding tasks on right window</li>
                   </ul>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    How does CheatCode work?
+                    How does CodeAssist work?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    CheatCode works by analyzing the content from your text editor through screen sharing. For optimal performance, we recommend splitting your screen in half with CheatCode on one side and your coding text editor on the other. This setup allows CheatCode to capture the necessary information and provide real-time recommendations and solutions to assist in your coding projects.</p>
+                    CodeAssist works by analyzing the content from your text editor through screen sharing. For optimal performance, we recommend splitting your screen in half with CodeAssist on one side and your coding text editor on the other. This setup allows CodeAssist to capture the necessary information and provide real-time recommendations and solutions to assist in your coding projects.</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    How frequently does CheatCode offer suggestions?
+                    How frequently does CodeAssist offer suggestions?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    CheatCode is designed to observe your screen and detect coding tasks. CheatCode evaluates the screen content every 5 seconds and determines if there is a need to offer a solution. If there is a new coding task in the screen, CheatCode attempts to provide a solution.</p>
+                    CodeAssist is designed to observe your screen and detect coding tasks. CodeAssist evaluates the screen content every 5 seconds and determines if there is a need to offer a solution. If there is a new coding task in the screen, CodeAssist attempts to provide a solution.</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    Should I use CheatCode for sensitive data?
+                    Should I use CodeAssist for sensitive data?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    No, CheatCode is not designed for handling sensitive or confidential information. While we prioritize data privacy and security, the tool involves data transmission and processing that may not be suitable for sensitive data. We strongly advise against using CheatCode for such purposes to ensure the security of your proprietary information.</p>
+                    No, CodeAssist is not designed for handling sensitive or confidential information. While we prioritize data privacy and security, the tool involves data transmission and processing that may not be suitable for sensitive data. We strongly advise against using CodeAssist for such purposes to ensure the security of your proprietary information.</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    How does CheatCode ensure the privacy of my data?
+                    How does CodeAssist ensure the privacy of my data?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    CheatCode processes data on the front end. Only textual information is sent to our backend for generating recommendations, ensuring that no images or visual data are stored or transmitted beyond your machine.</p>
+                    CodeAssist processes data on the front end. Only textual information is sent to our backend for generating recommendations, ensuring that no images or visual data are stored or transmitted beyond your machine.</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    Can I use CheatCode for production-level software development?
+                    Can I use CodeAssist for production-level software development?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    No, CheatCode is intended for use with non-critical side projects and should not be employed in production environments or with sensitive data.</p>
+                    No, CodeAssist is intended for use with non-critical side projects and should not be employed in production environments or with sensitive data.</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
@@ -543,51 +543,51 @@ export default function LandingPage() {
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    CheatCode utilizes third-party AI APIs for processing data. However, we ensure that only necessary textual data is shared while adhering to strict privacy standards.</p>
+                    CodeAssist utilizes third-party AI APIs for processing data. However, we ensure that only necessary textual data is shared while adhering to strict privacy standards.</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    Are updates made to CheatCode?
+                    Are updates made to CodeAssist?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    Yes, we periodically update CheatCode to enhance its features, improve user experience, and ensure security. We recommend keeping your application up-to-date for the best experience. </p>
+                    Yes, we periodically update CodeAssist to enhance its features, improve user experience, and ensure security. We recommend keeping your application up-to-date for the best experience. </p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    How can I contact CheatCode for further assistance?</h3>
+                    How can I contact CodeAssist for further assistance?</h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                    If you have any questions or need further assistance, feel free to contact us at <a href="mailto:CheatCodeai@gmail.com" className="text-blue-600 hover:underline">CheatCodeai@gmail.com</a>. Our team is always ready to help!</p>
+                    If you have any questions or need further assistance, feel free to contact us at <a href="mailto:CodeAssistai@gmail.com" className="text-blue-600 hover:underline">support@tegu.ai</a>. Ready to help!</p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    What are the recommended uses of CheatCode?
+                    What are the recommended uses of CodeAssist?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                  The recommended uses of CheatCode are instantly getting trouble shooting help while developing side projects and non-critical applications, debugging errors without having to leave your IDE when working on non-critical applications and side projects, and brainstorming solutions to problems when building non-critical applications and side projects.
+                  The recommended uses of CodeAssist are instantly getting trouble shooting help while developing side projects and non-critical applications, debugging errors without having to leave your IDE when working on non-critical applications and side projects, and brainstorming solutions to problems when building non-critical applications and side projects.
                   </p>
                 </QuestionCardContent>
               </QuestionCard>
               <QuestionCard>
                 <QuestionCardHeader>
                   <h3 className="text-lg font-bold text-gray-900">
-                    Can I use CheatCode while I am in a brainstorming, coding collaboration meeting?
+                    Can I use CodeAssist while I am in a brainstorming, coding collaboration meeting?
                   </h3>
                 </QuestionCardHeader>
                 <QuestionCardContent>
                   <p className="text-gray-600">
-                  Yes, but you must ensure that all meeting participants are aware of how the tool works and have consented to using the tool in the meeting since the tool extracts text from the screen. CheatCode can help you accelerate problem solviong while collaborating on non-critical applications and side projects, but it is important that it is used ethically and with user consent.
+                  Yes, but you must ensure that all meeting participants are aware of how the tool works and have consented to using the tool in the meeting since the tool extracts text from the screen. CodeAssist can help you accelerate problem solviong while collaborating on non-critical applications and side projects, but it is important that it is used ethically and with user consent.
                   </p>
                 </QuestionCardContent>
               </QuestionCard>

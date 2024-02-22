@@ -1,7 +1,7 @@
 'use client';
 
 export const handleJoinOurSlackRequest = () => {
-  window.location.href = 'https://join.slack.com/t/cheatcodecommunity/shared_invite/zt-2dewvxtjl-caGDjW~fOYtODFNeFBlssA';
+  window.location.href = 'https://join.slack.com/t/codeassistcommunity/shared_invite/zt-2dewvxtjl-caGDjW~fOYtODFNeFBlssA';
 }
 
 export const convertBitmapToCanvas = (bitmap: ImageBitmap): HTMLCanvasElement => {

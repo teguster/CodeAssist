@@ -28,7 +28,7 @@ export default function Header() {
     return (
         <header className="flex flex-row justify-between items-center py-3 px-4">
             <a className="text-gray-600" href="/">
-                <h1 className="text-2xl font-bold text-gray-900 ">CheatCode</h1>
+                <h1 className="text-2xl font-bold text-gray-900 ">CodeAssist</h1>
             </a>
             {isSmallScreen ? (
                 <div className="flex items-center space-x-4">
