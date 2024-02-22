@@ -1,3 +1,7 @@
+## Demo
+Youtube Video:
+[![CodeAssist Demo](http://img.youtube.com/vi/lGHGArfbV7o/0.jpg)](http://www.youtube.com/watch?v=lGHGArfbV7o "CodeAssist Demo")
+
 ## How to run
 
 ### 1) Install dependencies
